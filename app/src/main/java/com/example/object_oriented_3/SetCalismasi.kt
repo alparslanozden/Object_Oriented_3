@@ -11,6 +11,7 @@ fun main(){
     sayilar.add(1)
     sayilar.add(20)
     sayilar.add(30)
+    sayilar.add(10)
 
     println(sayilar.toString())
 
@@ -33,5 +34,11 @@ fun main(){
     for ((i,s) in sayilar.withIndex()){
         println("$i. --> $s")
     }
+
+    sayilar.remove(10)              //İSTENEN ELEMANI SİLER
+    println(sayilar.toString())
+
+    sayilar.clear()
+    println(sayilar.toString())             //HEPSİNİ SİLER
 
 }
